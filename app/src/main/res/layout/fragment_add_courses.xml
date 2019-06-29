@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.AddCoursesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_foreground"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:id="@+id/regfName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Course Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#000000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+            <EditText
+                android:id="@+id/reglname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Duration"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#000000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <EditText
+                android:id="@+id/regAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <Spinner
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Choose one"
+                >
+            </Spinner>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Add Course"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
